@@ -1,0 +1,34 @@
+# Конфігурація експерименту для ASSISTments
+
+benchmark: 'assistments'
+n_seeds: 30
+n_steps: 1000
+
+strategies:
+  - ucb1
+  - exp3
+  - linucb
+  - fixed
+  - naive
+
+# Детектор дрейфу (H1)
+use_drift_detector: true
+drift_detector_type: 'adwin'  # або 'page_hinkley'
+alpha_base: 2.0
+
+# Багатокритеріальна утиліта (H2)
+use_multi_utility: true
+utility_weights:
+  w_performance: 1.0
+  w_variance: 0.5
+  w_compute: 0.1
+  w_switch: 0.3
+entropy_regularization: 0.1
+
+# Мета-прунінг (H3)
+use_meta_pruning: true
+pruning_min_strategies: 2
+pruning_max_strategies: 5
+
+# Вихідна директорія
+output_dir: './experiments'

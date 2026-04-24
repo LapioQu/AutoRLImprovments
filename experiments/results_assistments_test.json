@@ -1,0 +1,57 @@
+{
+  "config": {
+    "benchmark": "assistments",
+    "n_seeds": 5,
+    "n_steps": 500,
+    "strategies": [
+      "ucb1",
+      "exp3",
+      "linucb",
+      "fixed",
+      "naive"
+    ]
+  },
+  "results": [
+    {
+      "strategy": "naive",
+      "mean_reward": 0.5003866275972908,
+      "std": 0.0038070437192387198,
+      "ci_lower": 0.497106144218853,
+      "ci_upper": 0.5036671109757285,
+      "avg_switches": 4.6
+    },
+    {
+      "strategy": "exp3",
+      "mean_reward": 0.4702754293207402,
+      "std": 0.02125626156336234,
+      "ci_lower": 0.4496071982143855,
+      "ci_upper": 0.48496225759890405,
+      "avg_switches": 73.6
+    },
+    {
+      "strategy": "ucb1",
+      "mean_reward": 0.3957466275972908,
+      "std": 0.004076494456025562,
+      "ci_lower": 0.39246614421885295,
+      "ci_upper": 0.39919480584191874,
+      "avg_switches": 422.6
+    },
+    {
+      "strategy": "linucb",
+      "mean_reward": 0.3606920030812808,
+      "std": 0.0037062538378203587,
+      "ci_lower": 0.35733011665104514,
+      "ci_upper": 0.3636278610828397,
+      "avg_switches": 370.4
+    },
+    {
+      "strategy": "fixed",
+      "mean_reward": 0.3018266275972908,
+      "std": 0.003868871198332219,
+      "ci_lower": 0.2984661442188529,
+      "ci_upper": 0.3051427606898685,
+      "avg_switches": 0.0
+    }
+  ],
+  "timestamp": "2026-04-24 16:35:48.138147"
+}
